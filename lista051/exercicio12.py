@@ -5,8 +5,31 @@ de números deve parar quando o usuário digitar o número -1, e este número -1
 como maior, nem como menor, e nem na contagem da média.
 '''
 
-cont = int(input("Informe um número:"))
+num = float(input("Digite um número (-1 encerra o programa):"))
+maior = num
+menor = num
+total_resposta = 0
+soma = 0
 
-while (cont != -1):
-    cont = int(input("Informe um número:"))
-    
+while ( num != -1 ):
+    soma = soma + num
+    total_resposta = total_resposta + 1
+
+    if ( maior < num):
+        maior = num
+
+    if ( menor > num ):
+        menor = num
+
+
+
+    num = float(input("Digite outro número (-1 encerra o programa):"))
+
+
+if ( maior == -1):
+    print("Você inseriu -1 na primeira resposta.\nPROGRAMA ENCERRADO")
+else:
+    print(f"Maior valor inserido: {maior}")
+    print(f"Menor valor inserido: {menor}")
+    print(f"Média dos valores inseridos: {soma / total_resposta }")
+    print("FIM DO PROGRAMA")
