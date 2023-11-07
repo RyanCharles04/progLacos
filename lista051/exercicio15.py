@@ -9,7 +9,7 @@ num = 1
 num2 = 1
 
 print("A série de Fibonacci até o décimo termo corresponde à:")
-while (cont < 15):
+while (cont <= 15):
     print(f"{num2}")
     soma = num + num2
     num = num2
