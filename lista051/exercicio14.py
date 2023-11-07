@@ -7,7 +7,7 @@ num = 5
 cont = 1
 
 while (num > 0):
-    cont *= num
-    num -= 1
+    cont = cont * num
+    num = num - 1
 
 print(f"O fatorial de 5 (5!) é :{cont}")

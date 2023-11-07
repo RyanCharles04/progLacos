@@ -4,10 +4,14 @@ formada pela sequência 1,1,2,3,5,8,13,21,34, ... etc. Ela se caracteriza pela s
 anterior subsequente.
 '''
 
-contador = 1
-acumulador = 0
+cont = 1
+num = 1
+num2 = 1
 
-while ():
-
-
-print(f"A soma dos valores de 0 a 500 de 2 em 2 é = {acumulador}")
+print("A série de Fibonacci até o décimo termo corresponde à:")
+while (cont < 15):
+    print(f"{num2}")
+    soma = num + num2
+    num = num2
+    num2 = soma
+    cont = cont + 1
